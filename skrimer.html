@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style/skrimer.css">
+    <link rel="icon" href="/image/icons8-кошка.gif">
+</head>
+<body>
+   <!-- Видео (изначально скрыто) -->
+  <video id="video" autoplay muted loop style="display: none;">
+    <source src="Скример.mp4" type="video/mp4">
+    Ваш браузер не поддерживает видео.
+  </video>
+
+  <script>
+    // Задержка перед показом видео (в миллисекундах)
+    const videoDelay = 3000; // 3 секунды
+    // Задержка перед включением звука (в миллисекундах)
+    const audioDelay = 2900; // 5 секунд
+
+    // Получаем элемент видео
+    const video = document.getElementById('video');
+
+    // Показываем видео через videoDelay
+    setTimeout(() => {
+      video.style.display = 'block'; // Показываем видео
+    }, videoDelay);
+
+    // Пытаемся включить звук через audioDelay
+    setTimeout(() => {
+      video.muted = false; // Включаем звук
+      video.play(); // Перезапускаем воспроизведение (на всякий случай)
+    }, audioDelay);
+  </script>
+   
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
